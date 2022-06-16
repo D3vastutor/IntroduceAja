@@ -15,6 +15,7 @@
                 <Entry Placeholder="Email"/>
                 <Entry Placeholder="Password" IsPassword="True"/>
 
+                <Button x:Name="ButtonLogin" Text="Login" TextColor="White" BackgroundColor="Orange" CornerRadius="60"/>
             </StackLayout>
                 
 
