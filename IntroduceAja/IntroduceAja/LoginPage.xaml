@@ -1,21 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="IntroduceAja.LoginPage">
+             x:Class="IntroduceAja.LoginPage"
+             BackgroundColor="DeepSkyBlue">
     <ContentPage.Content>
-        
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+        <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="#FDC830">
 
             <Label Text="Introduction Aja" FontSize="Title" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0"/>
             <Label Text="Mobile Application" FontSize="Subtitle" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0, 0, 0, 25"/>
 
-            <StackLayout>
+            <StackLayout BackgroundColor="#F37335">
                 <Label FontSize="20" Text="Login" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
 
-                <Entry Placeholder="Email"/>
-                <Entry Placeholder="Password" IsPassword="True"/>
+                <Entry Placeholder="Email" PlaceholderColor="White"/>
+                <Entry Placeholder="Password" PlaceholderColor="White" IsPassword="True"/>
 
-                <Button x:Name="ButtonLogin" Text="Login" TextColor="White" BackgroundColor="Orange" CornerRadius="60"/>
+                <Button x:Name="ButtonLogin" Text="Login" TextColor="Orange" BackgroundColor="White" CornerRadius="60"/>
             </StackLayout>
                 
 
