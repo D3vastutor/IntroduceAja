@@ -10,11 +10,24 @@
             <Label Text="Introduction Aja" FontSize="Title" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0"/>
             <Label Text="Mobile Application" FontSize="Subtitle" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0, 0, 0, 25"/>
 
-            <StackLayout BackgroundColor="#F37335">
+            <StackLayout BackgroundColor="#F37335" Spacing="15" Orientation="Vertical">
                 <Label FontSize="20" Text="Login" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
 
-                <Entry Placeholder="Email" PlaceholderColor="White"/>
-                <Entry Placeholder="Password" PlaceholderColor="White" IsPassword="True"/>
+                <Frame CornerRadius="60" BackgroundColor="Orange" Padding="0">
+                    <Entry FontAttributes="Bold" 
+                           HorizontalTextAlignment="Center" 
+                           Placeholder="Email" 
+                           PlaceholderColor="White"/>
+                </Frame>
+
+                <Frame CornerRadius="60" BackgroundColor="Orange" Padding="0">
+                    <Entry FontAttributes="Bold" 
+                           HorizontalTextAlignment="Center" 
+                           Placeholder="Password" 
+                           PlaceholderColor="White"  
+                           TextColor="DarkGreen" 
+                           IsPassword="True"/>
+                </Frame>
 
                 <Button x:Name="ButtonLogin" Text="Login" TextColor="Orange" BackgroundColor="White" CornerRadius="60"/>
             </StackLayout>
