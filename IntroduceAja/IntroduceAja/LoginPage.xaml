@@ -10,18 +10,22 @@
             <Label Text="Introduction Aja" FontSize="Title" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0"/>
             <Label Text="Mobile Application" FontSize="Subtitle" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0, 0, 0, 25"/>
 
-            <StackLayout WidthRequest="200">
-                <Label FontSize="20" Text="Login" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
-
-                <Frame CornerRadius="60" HeightRequest="50" Padding="10" BackgroundColor="WhiteSmoke">
-                    <Entry Placeholder="Email" PlaceholderColor="Blue"/>
-                </Frame>
-                <Frame CornerRadius="60" Padding="10" BackgroundColor="WhiteSmoke">
-                    <Entry Placeholder="Password" IsPassword="True" PlaceholderColor="Blue"/>
-                </Frame>
-
-            </StackLayout>
+            <Frame BackgroundColor="Blue" CornerRadius="30" WidthRequest="450">
                 
+                <StackLayout WidthRequest="200">
+                    <Label Text="Login" FontAttributes="Bold" TextColor="White" 
+                           HorizontalOptions="CenterAndExpand" FontSize="Header"/>
+
+                    <Frame CornerRadius="60" HeightRequest="50" Padding="10" BackgroundColor="WhiteSmoke">
+                        <Entry Placeholder="Email" PlaceholderColor="Blue"/>
+                    </Frame>
+                    <Frame CornerRadius="60" Padding="10" BackgroundColor="WhiteSmoke">
+                        <Entry Placeholder="Password" IsPassword="True" PlaceholderColor="Blue"/>
+                    </Frame>
+
+                </StackLayout>
+                
+            </Frame>
 
         </StackLayout>
         
