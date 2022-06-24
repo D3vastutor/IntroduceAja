@@ -7,11 +7,8 @@
 
         <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="#FDC830">
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="0" Padding="0">
-                <Image Source="settings" VerticalOptions="CenterAndExpand" Margin="0"/>
-                <Image Source="logostd" VerticalOptions="CenterAndExpand" Margin="0" HeightRequest="60"/>
-            </StackLayout>
-            
+            <Image Source="create" VerticalOptions="CenterAndExpand" Margin="0" HeightRequest="80" WidthRequest="80"/>
+
             <Label Text="Introduction Aja" FontSize="Title" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0"/>
             <Label Text="Mobile Application" FontSize="Subtitle" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0, 0, 0, 25"/>
 
@@ -22,6 +19,7 @@
                     <Entry FontAttributes="Bold" 
                            HorizontalTextAlignment="Center" 
                            Placeholder="Email" 
+                           TextColor="White"
                            PlaceholderColor="White"/>
                 </Frame>
 
