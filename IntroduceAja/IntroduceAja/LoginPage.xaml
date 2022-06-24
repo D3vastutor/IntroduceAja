@@ -4,10 +4,18 @@
              x:Class="IntroduceAja.LoginPage">
     <ContentPage.Content>
         
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand" BackgroundColor="Orange">
 
-            <Label Text="Introduction Aja" FontSize="Title" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0"/>
-            <Label Text="Mobile Application" FontSize="Subtitle" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0, 0, 0, 25"/>
+            <Label Text="Introduction Aja" 
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="0"/>
+            <Label Text="Mobile Application" 
+                   FontSize="Subtitle" 
+                   TextColor="Black" 
+                   HorizontalOptions="CenterAndExpand" 
+                   Margin="0, 0, 0, 25"/>
 
             <StackLayout Orientation="Horizontal">
                 <Label FontSize="20" Text="Login" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
