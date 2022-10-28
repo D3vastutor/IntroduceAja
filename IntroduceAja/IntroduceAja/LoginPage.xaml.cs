@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace IntroduceAja
@@ -9,6 +10,11 @@ namespace IntroduceAja
         public LoginPage()
         {
             InitializeComponent();
+        }
+
+        async void LoginClicked(object sender, EventArgs args)
+        {
+            await lblJudul.RelRotateTo(360, 1000);
         }
     }
 }
