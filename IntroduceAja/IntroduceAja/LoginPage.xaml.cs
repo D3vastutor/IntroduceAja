@@ -16,5 +16,10 @@ namespace IntroduceAja
         {
             await lblJudul.RelRotateTo(360, 1000);
         }
+
+        async void TapRegister(object sender, EventArgs args)
+        {
+            await Navigation.PushModalAsync(new MainPage());
+        }
     }
 }

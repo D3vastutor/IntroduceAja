@@ -36,7 +36,11 @@
                         Clicked="LoginClicked"/>
 
                 <Label Text="Register"
-                       TextColor="Black">
+                       TextColor="Black"
+                       HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapRegister" />
+                    </Label.GestureRecognizers>
                 </Label>
             </StackLayout>
 
