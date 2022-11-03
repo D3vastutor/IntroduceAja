@@ -7,20 +7,22 @@
 
         <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="#FDC830">
 
-            <Image Source="create" VerticalOptions="CenterAndExpand" Margin="0" HeightRequest="80" WidthRequest="80"/>
+            <Image x:Name="pensil" Source="create" VerticalOptions="CenterAndExpand" Margin="0" HeightRequest="80" WidthRequest="80"/>
 
             <Label Text="Introduction Aja" FontSize="Title" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0" x:Name="lblJudul"/>
             <Label Text="Mobile Application" FontSize="Subtitle" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0, 0, 0, 25"/>
 
             <StackLayout BackgroundColor="#F37335" Spacing="15" Orientation="Vertical">
-                <Label FontSize="20" Text="Login" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label FontSize="20" Text="Login" TextColor="Black" 
+                       FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
 
                 <Frame CornerRadius="60" BackgroundColor="Orange" Padding="0">
                     <Entry FontAttributes="Bold" 
                            HorizontalTextAlignment="Center" 
                            Placeholder="Email" 
                            TextColor="White"
-                           PlaceholderColor="White"/>
+                           PlaceholderColor="White"
+                           x:Name="isiEmail"/>
                 </Frame>
 
                 <Frame CornerRadius="60" BackgroundColor="Orange" Padding="0">
@@ -29,14 +31,16 @@
                            Placeholder="Password" 
                            PlaceholderColor="White"  
                            TextColor="DarkGreen" 
-                           IsPassword="True"/>
+                           IsPassword="True"
+                           x:Name="isiPassword"/>
                 </Frame>
 
-                <Button x:Name="ButtonLogin" Text="Login" TextColor="Orange" BackgroundColor="White" CornerRadius="60"
+                <Button x:Name="ButtonLogin" Text="Login" TextColor="Orange" 
+                        BackgroundColor="White" CornerRadius="60"
                         Clicked="LoginClicked"/>
 
                 <Label Text="Register"
-                       TextColor="Black"
+                       TextColor="White"
                        HorizontalOptions="Center">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapRegister" />

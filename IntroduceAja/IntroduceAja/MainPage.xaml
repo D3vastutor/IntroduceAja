@@ -3,32 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IntroduceAja.MainPage">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="White">
         <Frame BackgroundColor="Orange" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <StackLayout BackgroundColor="Transparent">
+                <Label Text="System Apps League" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+                <Label Text="Our Super Member List!" FontSize="Title" Padding="30,10,30,10"
+                       HorizontalOptions="Center" TextColor="White"/>
+            </StackLayout>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
 
-        <CollectionView x:Name="MemberCollection"
-                HeightRequest="200">
-            <CollectionView.ItemTemplate>
+        <ListView x:Name="MemberList"
+                  SeparatorVisibility="Default">
+            <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Grid RowDefinitions="Auto,Auto,Auto">
-                        <Label Grid.Row="0" Text="{Binding UserName}"/>
-                        <Label Grid.Row="0" Text="{Binding Skill}"/>
-                        <Label Grid.Row="0" Text="{Binding SkillLevel}"/>
-                    </Grid>
+                    <ViewCell>
+                        <StackLayout Margin="10,0">
+                            <Label Text="{Binding UserName}" TextColor="Black" FontAttributes="Bold"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Skill}"/>
+                                
+                                <Label Text="     Lv"/>
+                                <Label Text="{Binding SkillLevel}"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
                 </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-
-        <Button Text="Close" 
-                TextColor="Black"
-                BackgroundColor="White"
-                CornerRadius="20"
-                VerticalOptions="EndAndExpand"
-                Clicked="ClosePage"/>
+            </ListView.ItemTemplate>
+        </ListView>
+        
     </StackLayout>
 
 </ContentPage>

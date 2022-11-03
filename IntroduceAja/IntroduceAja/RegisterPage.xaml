@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntroduceAja.RegisterPage">
+    <ContentPage.Content>
+        
+        <StackLayout BackgroundColor="White">
+            <Frame BackgroundColor="Orange" Padding="24" CornerRadius="0">
+                <Label Text="System Apps League" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Start join now!" FontSize="Title" Padding="30,10,30,10"
+               HorizontalOptions="Center"/>
+
+            <StackLayout>
+                <Frame CornerRadius="60" BackgroundColor="Orange" Padding="0">
+                    <Entry FontAttributes="Bold" 
+                           HorizontalTextAlignment="Center" 
+                           Placeholder="Username" 
+                           TextColor="White"
+                           PlaceholderColor="White"/>
+                </Frame>
+
+                <Frame CornerRadius="60" BackgroundColor="Orange" Padding="0">
+                    <Entry FontAttributes="Bold" 
+                           HorizontalTextAlignment="Center" 
+                           Placeholder="Skill" 
+                           PlaceholderColor="White"  
+                           TextColor="DarkGreen"/>
+                </Frame>
+
+                <Frame CornerRadius="60" BackgroundColor="Orange" Padding="0">
+                    <Entry FontAttributes="Bold" 
+                           HorizontalTextAlignment="Center" 
+                           Placeholder="Skill Level" 
+                           PlaceholderColor="White"  
+                           TextColor="DarkGreen" 
+                           IsPassword="True"/>
+                </Frame>
+            </StackLayout>
+
+            <Button Text="ENROLL" 
+                TextColor="Black"
+                BackgroundColor="Blue"
+                CornerRadius="20"
+                VerticalOptions="EndAndExpand"
+                Clicked="ClosePage"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

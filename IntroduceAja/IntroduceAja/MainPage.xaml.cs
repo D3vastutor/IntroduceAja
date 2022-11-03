@@ -1,4 +1,5 @@
 ﻿using IntroduceAja.Models;
+using IntroduceAja.Models.Responses;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -38,8 +39,8 @@ namespace IntroduceAja
         {
             var httpClient = new HttpClient();
             var response = await httpClient.GetStringAsync("http://172.16.28.51:221/Members/Summon");
-            var members = JsonConvert.DeserializeObject<List<Members>>(response);
-            MemberCollection.ItemsSource = members;
+            var members = JsonConvert.DeserializeObject<ListMemberResponse>(response);
+            MemberList.ItemsSource = members.Status;
         }
     }
 }

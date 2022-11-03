@@ -12,13 +12,16 @@ namespace IntroduceAja
             InitializeComponent();
         }
 
-        async void LoginClicked(object sender, EventArgs args)
+        void LoginClicked(object sender, EventArgs args)
         {
-            await lblJudul.RelRotateTo(360, 1000);
+             lblJudul.RelRotateTo(360, 1000);
+             pensil.RelRotateTo(360, 1000);
         }
 
         async void TapRegister(object sender, EventArgs args)
         {
+            //string value1 = isiEmail.Text;
+            //await   DisplayAlert("VAlue", isiEmail.Text, "Ok");
             await Navigation.PushModalAsync(new MainPage());
         }
     }
