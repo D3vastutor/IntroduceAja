@@ -30,7 +30,29 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        
+
+        <StackLayout Spacing="10" Padding="0"
+                                 VerticalOptions="End">
+
+            <AbsoluteLayout VerticalOptions="End" HorizontalOptions="End" Margin="0,0,0,30" 
+                                         Padding="0">
+                <ImageButton
+				            x:Name="FAB_Attend"
+                            Clicked="AddMemberClick"
+				            Source="create"
+				            IsVisible="True"
+                            HeightRequest="70"
+                            WidthRequest="70"
+                            CornerRadius="35"
+                            Margin="0,0,6,0"
+                            Padding="10"
+                            BackgroundColor="#F37335"
+				            AbsoluteLayout.LayoutFlags="PositionProportional"
+				            AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"/>
+            </AbsoluteLayout>
+
+        </StackLayout>
+
     </StackLayout>
 
 </ContentPage>

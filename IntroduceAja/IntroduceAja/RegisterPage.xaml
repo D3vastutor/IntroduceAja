@@ -17,7 +17,8 @@
                            HorizontalTextAlignment="Center" 
                            Placeholder="Username" 
                            TextColor="White"
-                           PlaceholderColor="White"/>
+                           PlaceholderColor="White"
+                           x:Name="UsernameMember"/>
                 </Frame>
 
                 <Frame CornerRadius="60" BackgroundColor="Orange" Padding="0">
@@ -25,7 +26,8 @@
                            HorizontalTextAlignment="Center" 
                            Placeholder="Skill" 
                            PlaceholderColor="White"  
-                           TextColor="DarkGreen"/>
+                           TextColor="DarkGreen"
+                           x:Name="SkillMember"/>
                 </Frame>
 
                 <Frame CornerRadius="60" BackgroundColor="Orange" Padding="0">
@@ -34,7 +36,7 @@
                            Placeholder="Skill Level" 
                            PlaceholderColor="White"  
                            TextColor="DarkGreen" 
-                           IsPassword="True"/>
+                           x:Name="LevelSkillMember"/>
                 </Frame>
             </StackLayout>
 
@@ -43,7 +45,7 @@
                 BackgroundColor="Blue"
                 CornerRadius="20"
                 VerticalOptions="EndAndExpand"
-                Clicked="ClosePage"/>
+                Clicked="SubmitButton"/>
             
         </StackLayout>
     </ContentPage.Content>

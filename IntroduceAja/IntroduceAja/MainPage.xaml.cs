@@ -40,7 +40,12 @@ namespace IntroduceAja
             var httpClient = new HttpClient();
             var response = await httpClient.GetStringAsync("http://172.16.28.51:221/Members/Summon");
             var members = JsonConvert.DeserializeObject<ListMemberResponse>(response);
-            MemberList.ItemsSource = members.Status;
+            MemberList.ItemsSource = members.Data;
+        }
+
+        async void AddMemberClick(object sender, EventArgs args)
+        {
+            await Navigation.PushModalAsync(new RegisterPage());
         }
     }
 }

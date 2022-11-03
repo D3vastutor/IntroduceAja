@@ -7,7 +7,7 @@
 
         <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="#FDC830">
 
-            <Image x:Name="pensil" Source="create" VerticalOptions="CenterAndExpand" Margin="0" HeightRequest="80" WidthRequest="80"/>
+            <Image x:Name="logo" Source="logostd" VerticalOptions="CenterAndExpand" Margin="0" HeightRequest="80" WidthRequest="80"/>
 
             <Label Text="Introduction Aja" FontSize="Title" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0" x:Name="lblJudul"/>
             <Label Text="Mobile Application" FontSize="Subtitle" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0, 0, 0, 25"/>

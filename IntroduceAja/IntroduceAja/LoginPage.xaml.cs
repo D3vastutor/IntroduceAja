@@ -14,8 +14,8 @@ namespace IntroduceAja
 
         void LoginClicked(object sender, EventArgs args)
         {
-             lblJudul.RelRotateTo(360, 1000);
-             pensil.RelRotateTo(360, 1000);
+            //lblJudul.RelRotateTo(360, 1000);
+            logo.RelRotateTo(360, 1000);
         }
 
         async void TapRegister(object sender, EventArgs args)
