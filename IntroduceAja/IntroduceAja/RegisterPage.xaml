@@ -17,7 +17,7 @@
                            HorizontalTextAlignment="Center" 
                            Placeholder="Username" 
                            TextColor="White"
-                           PlaceholderColor="White"
+                           PlaceholderColor="WhiteSmoke"
                            x:Name="UsernameMember"/>
                 </Frame>
 
@@ -25,7 +25,7 @@
                     <Entry FontAttributes="Bold" 
                            HorizontalTextAlignment="Center" 
                            Placeholder="Skill" 
-                           PlaceholderColor="White"  
+                           PlaceholderColor="WhiteSmoke"  
                            TextColor="DarkGreen"
                            x:Name="SkillMember"/>
                 </Frame>
@@ -34,7 +34,7 @@
                     <Entry FontAttributes="Bold" 
                            HorizontalTextAlignment="Center" 
                            Placeholder="Skill Level" 
-                           PlaceholderColor="White"  
+                           PlaceholderColor="WhiteSmoke"  
                            TextColor="DarkGreen" 
                            x:Name="LevelSkillMember"/>
                 </Frame>

@@ -13,7 +13,8 @@
         </Frame>
 
         <ListView x:Name="MemberList"
-                  SeparatorVisibility="Default">
+                  SeparatorVisibility="Default"
+                  ItemTapped="Member_Selected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

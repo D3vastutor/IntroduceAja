@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntroduceAja.UpdateDeletePage"
+             BackgroundColor="Snow">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="DarkGreen" Padding="24" CornerRadius="0">
+                <StackLayout BackgroundColor="Transparent">
+                    <Label Text="INTROGATION ROOM" HorizontalTextAlignment="Center" TextColor="Red" FontSize="36"/>
+                    <Label Text="Surrender or Improve?" FontSize="Title" Padding="30,10,30,10"
+                       HorizontalOptions="Center" TextColor="MediumPurple"/>
+                </StackLayout>
+            </Frame>
+
+
+            <StackLayout>
+                <Frame CornerRadius="60" BackgroundColor="White" Padding="0"
+                       BorderColor="Black" HorizontalOptions="FillAndExpand">
+                    <Entry FontAttributes="Bold" 
+                           HorizontalTextAlignment="Center" 
+                           Placeholder="Username" 
+                           TextColor="DarkCyan"
+                           PlaceholderColor="WhiteSmoke"
+                           x:Name="UsernameMember"/>
+                </Frame>
+
+                <Frame CornerRadius="60" BackgroundColor="White" Padding="0"
+                       BorderColor="Black" HorizontalOptions="Center" WidthRequest="211">
+                    <Entry FontAttributes="Bold" 
+                           HorizontalTextAlignment="Center" 
+                           Placeholder="Skill" 
+                           PlaceholderColor="WhiteSmoke"  
+                           TextColor="DarkCyan"
+                           x:Name="SkillMember"/>
+                </Frame>
+
+                <Frame CornerRadius="60" BackgroundColor="White" Padding="0"
+                       BorderColor="Black" HorizontalOptions="Center" WidthRequest="121">
+                    <Entry FontAttributes="Bold" 
+                           HorizontalTextAlignment="Center" 
+                           Placeholder="Skill Level" 
+                           PlaceholderColor="WhiteSmoke"  
+                           TextColor="DarkCyan" 
+                           x:Name="LevelSkillMember"/>
+                </Frame>
+            </StackLayout>
+
+            <Grid ColumnDefinitions="Auto,*,Auto"
+                  VerticalOptions="EndAndExpand">
+                
+                <Button Text="Kill Him.." 
+                        TextTransform="Lowercase"
+                    TextColor="Red"
+                    BackgroundColor="Blue"
+                    CornerRadius="20"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    Clicked="DeleteButton"/>
+                <Button Text="I have believe!" 
+                        TextTransform="None"
+                    TextColor="White"
+                    BackgroundColor="Blue"
+                    CornerRadius="20"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="EndAndExpand"
+                    Clicked="UpdateButton"
+                    Grid.Column="2"/>
+                
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

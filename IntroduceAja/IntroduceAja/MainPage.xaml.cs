@@ -47,5 +47,11 @@ namespace IntroduceAja
         {
             await Navigation.PushModalAsync(new RegisterPage());
         }
+
+        private async void Member_Selected(object sender, ItemTappedEventArgs e)
+        {
+            var selectedItem = e.Item as Members; //from here you can get your item and store for later use
+            await Navigation.PushModalAsync(new UpdateDeletePage(selectedItem.Id));
+        }
     }
 }
