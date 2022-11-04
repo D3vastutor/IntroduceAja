@@ -14,7 +14,8 @@
 
         <ListView x:Name="MemberList"
                   SeparatorVisibility="Default"
-                  ItemTapped="Member_Selected">
+                  ItemTapped="Member_Selected"
+                  IsPullToRefreshEnabled="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

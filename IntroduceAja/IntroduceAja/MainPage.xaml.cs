@@ -20,6 +20,13 @@ namespace IntroduceAja
         public MainPage()
         {
             InitializeComponent();
+
+            MemberList.RefreshCommand = new Command(() =>
+            {
+                SummonMembers();
+
+                MemberList.IsRefreshing = false;
+            });
         }
 
         async void ClosePage(object sender, EventArgs args)

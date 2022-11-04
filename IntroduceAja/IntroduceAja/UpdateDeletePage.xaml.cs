@@ -67,9 +67,14 @@ namespace IntroduceAja
             StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
 
             HttpClient httpClient = new HttpClient();
-            string url = "http://172.16.28.51:221/Members/enroll";
+            string url = $"http://172.16.28.51:221/Members/eliminate?param={_idItem}";
             httpClient.BaseAddress = new Uri(url);
             HttpResponseMessage response = await httpClient.PostAsync(url, content);
+
+            if (response.IsSuccessStatusCode)
+                await ClosePage();
+            else
+                await DisplayAlert("Lo Ngalamin Error", "Silahkan cari penyebabnya ;p", "Aduh!");
 
         }
 

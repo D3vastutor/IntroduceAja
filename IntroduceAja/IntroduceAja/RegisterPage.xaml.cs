@@ -32,7 +32,7 @@ namespace IntroduceAja
             if (isSuccess)
                 await ClosePage();
             else
-                await DisplayAlert("Error", "Cari tau sendiri errornya ;p", "Siap!");
+                await DisplayAlert("Error nih", "Saatnya lo debug ;p", "Okay!");
         }
 
         async Task<bool> EnrollMember(EnrollMemberRequest param)
